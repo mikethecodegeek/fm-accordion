@@ -7,9 +7,11 @@ Array.from(sections).forEach(s => {
             const bold = e.target.parentElement.firstElementChild;
             bold.classList.toggle('bold');
             sib.classList.toggle("hide");
+            bold.nextSibling.nextSibling.classList.toggle('up-arrow')
         } else {
             const sib = e.target.nextSibling.nextSibling;
             const bold = e.target.firstElementChild;
+            bold.nextSibling.nextSibling.classList.toggle('up-arrow')
             bold.classList.toggle('bold');
             sib.classList.toggle("hide");
         }
