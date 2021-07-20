@@ -23,6 +23,10 @@ h1 {
 }
 .card {
     background-color: white;
+    background-image: url('./images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: 45% -3%;
+    
     border-radius: 20px;
     /* width: 100%; */
     position: relative;
@@ -115,6 +119,7 @@ hr {
 
     .mobile-only {
         display: none;
+        
     }
     img.desktop-only {
         display: block;
@@ -125,6 +130,10 @@ hr {
 
     .card {
         overflow-x: hidden;
+        background-image: url('./images/bg-pattern-desktop.svg');
+        background-size: 85%;
+        background-position: -323% 72%;
+        
     }
 
     .the-box {
