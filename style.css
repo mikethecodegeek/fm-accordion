@@ -88,9 +88,14 @@ hr {
     display: block;
 }
 
+.the-box {
+    display: none;
+}
+
 @media only screen and (min-width: 750px) {
     .container {
         width: 96vw;
+        max-width: 725px;
     }
     .card {
         display: flex;
@@ -120,5 +125,14 @@ hr {
 
     .card {
         overflow-x: hidden;
+    }
+
+    .the-box {
+        display: block;
+        top: 215px;
+        height: 95px;
+        position: relative;
+        z-index: 1;
+        left: -47px;
     }
 }
